@@ -5,6 +5,24 @@ const clamp=(v,a=0,b=1)=>Math.min(b,Math.max(a,v));
 const lerp=(a,b,t)=>a+(b-a)*t;
 const smooth=t=>t*t*(3-2*t);
 const root=document.documentElement;
+/* Sprache der Seite (html lang): Deutsch oder Englisch. Nur Meldungen und Beschriftungen, die das Skript selbst setzt. */
+const EN=(root.lang||'de').slice(0,2)==='en';
+const T=EN?{
+  menu:'Menu',close:'Close',invalid:'Please fill in all fields and confirm the notice.',
+  preview:'Preview: nothing was sent here. In the live version your inquiry comes to us.',
+  sending:'Sending …',thanks:'Thank you, we have received your inquiry and will get back to you.',
+  fail:'That did not work. Please try again later.',offline:'No connection. Please try again later.',
+  s503:'The contact form is not enabled yet. Please try again later.',s403:'The inquiry could not be accepted.',
+  s422:'Please fill in your name, email or phone and your message (at least a few words), and confirm the notice.',
+  s429:'Many inquiries have just arrived. Please try again later.',s500:'The inquiry could not be delivered right now. Please try again later.',
+  deOnly:'This page is currently available in German only.',titles:{impressum:'Legal notice',datenschutz:'Privacy policy'}
+}:{
+  menu:'Menü',close:'Schließen',invalid:'Bitte füllen Sie alle Felder aus und bestätigen Sie den Hinweis.',
+  preview:'Vorschau: Hier wurde nichts gesendet. In der Live-Version geht die Anfrage an uns.',
+  sending:'Wird gesendet …',thanks:'Danke, wir haben Ihre Anfrage erhalten und melden uns bei Ihnen.',
+  fail:'Das hat leider nicht geklappt. Bitte versuchen Sie es später noch einmal.',offline:'Keine Verbindung. Bitte versuchen Sie es später noch einmal.',
+  titles:{impressum:'Impressum',datenschutz:'Datenschutzerklärung'}
+};
 const mqReduce=matchMedia('(prefers-reduced-motion: reduce)');
 let reduce=mqReduce.matches;
 root.classList.add('js');
@@ -201,7 +219,7 @@ function setMenu(o){
   menuOpen=o;
   menu.hidden=!o;
   menuBtn.setAttribute('aria-expanded',o?'true':'false');
-  menuBtn.textContent=o?'Schließen':'Menü';
+  menuBtn.textContent=o?T.close:T.menu;
   root.classList.toggle('menu-open',o);
   updateNav();
 }
@@ -274,25 +292,26 @@ if(form){
   const t0=Date.now();
   form.addEventListener('submit',e=>{
     e.preventDefault();
-    if(!form.checkValidity()){status.textContent='Bitte füllen Sie alle Felder aus und bestätigen Sie den Hinweis.';form.reportValidity();return;}
-    if(!form.hasAttribute('data-live')){status.textContent='Vorschau: Hier wurde nichts gesendet. In der Live-Version geht die Anfrage an uns.';return;}
+    if(!form.checkValidity()){status.textContent=T.invalid;form.reportValidity();return;}
+    if(!form.hasAttribute('data-live')){status.textContent=T.preview;return;}
     const btn=form.querySelector('button[type="submit"]');
     const fd=new FormData(form); fd.append('dauer',String(Date.now()-t0));
-    btn.disabled=true; status.textContent='Wird gesendet …';
+    btn.disabled=true; status.textContent=T.sending;
     fetch(form.getAttribute('action'),{method:'POST',body:fd,headers:{'Accept':'application/json'}})
-      .then(r=>r.json().then(j=>({ok:r.ok&&j&&j.ok,msg:j&&j.message}),()=>({ok:false,msg:''})))
+      .then(r=>r.json().then(j=>({ok:r.ok&&j&&j.ok,msg:j&&j.message,st:r.status}),()=>({ok:false,msg:'',st:r.status})))
       .then(res=>{
-        if(res.ok){form.reset();status.textContent=res.msg||'Danke, wir haben Ihre Anfrage erhalten und melden uns bei Ihnen.';}
-        else status.textContent=res.msg||'Das hat leider nicht geklappt. Bitte versuchen Sie es später noch einmal.';
+        /* Deutsch: Text des Skripts. Englisch: Meldung nach Status, weil das Skript nur Deutsch antwortet. */
+        if(res.ok){form.reset();status.textContent=EN?T.thanks:(res.msg||T.thanks);}
+        else status.textContent=EN?(T['s'+res.st]||T.fail):(res.msg||T.fail);
       })
-      .catch(()=>{status.textContent='Keine Verbindung. Bitte versuchen Sie es später noch einmal.';})
+      .catch(()=>{status.textContent=T.offline;})
       .then(()=>{btn.disabled=false;});
   });
 }
 
 /* ---------- Rechtstexte: Dialog. Live wird der Text aus der eigenen Seite (/impressum/, /datenschutz/) geladen ---------- */
-const dlg=$('#dlg'), dlgTitle=$('#dlgTitle'), dlgBody=$('#dlgBody');
-const titles={impressum:'Impressum',datenschutz:'Datenschutzerklärung'};
+const dlg=$('#dlg'), dlgTitle=$('#dlgTitle'), dlgBody=$('#dlgBody'), dlgNote=$('#dlgNote');
+const titles=T.titles;
 function openDlg(name){
   dlgTitle.textContent=titles[name]||'';
   if(dlg.showModal) dlg.showModal(); else dlg.setAttribute('open','');
@@ -308,6 +327,10 @@ $$('[data-dlg]').forEach(b=>b.addEventListener('click',e=>{
       const src=new DOMParser().parseFromString(t,'text/html').querySelector('.legal-body');
       if(!src)throw 0;
       dlgBody.innerHTML=src.innerHTML; openDlg(name);
+      /* Rechtstext nur auf Deutsch: Sprache des Textes setzen, auf englischen Seiten mit Hinweis darüber */
+      const tl=src.getAttribute('lang');
+      if(tl) dlgBody.setAttribute('lang',tl); else dlgBody.removeAttribute('lang');
+      if(dlgNote){dlgNote.textContent=T.deOnly; dlgNote.hidden=!(EN&&tl==='de');}
     })
     .catch(()=>{location.href=b.getAttribute('href');});
 }));
