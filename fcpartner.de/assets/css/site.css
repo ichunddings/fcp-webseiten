@@ -369,3 +369,18 @@ dialog{max-height:min(86svh,820px);overflow:auto}
 /* nur Live-Seite */
 .h1.sm{font-size:clamp(2.1rem,1rem + 4.6vw,4.4rem);max-width:none;overflow-wrap:break-word;hyphens:auto}
 .nf-wrap{display:grid;gap:22px;justify-items:start;margin-top:clamp(20px,3vw,36px)}
+.nf-wrap .lead a{text-underline-offset:3px}
+
+/* Sprachwahl (DE / EN): in der Leiste, im Handy-Menü und im Fußbereich */
+.lang-switch{display:flex;align-items:center;gap:1px;font-size:13.5px;font-weight:600;letter-spacing:.03em}
+.lang-switch>*{padding:9px 9px;border-radius:999px;text-decoration:none;color:var(--ink-2);line-height:1}
+.lang-switch a:hover{background:rgba(0,0,0,.07);color:var(--ink)}
+.lang-switch [aria-current]{color:var(--ink)}
+.nav.dark .lang-switch>*{color:var(--on-night-2)}
+.nav.dark .lang-switch a:hover{background:rgba(255,255,255,.12);color:var(--on-night)}
+.nav.dark .lang-switch [aria-current]{color:var(--on-night)}
+@media (max-width:859px){.lang-switch{display:none}}
+.menu a.menu-lang{font-family:var(--sans);font-size:1.1rem;font-weight:560;letter-spacing:0;color:var(--on-night-2);margin-top:22px;padding:10px 0}
+.foot-legal .foot-lang{padding-left:22px;border-left:1px solid rgba(255,255,255,.2)}
+.legal-note{max-width:68ch;margin-bottom:22px;color:var(--ink);font-weight:520}
+.dlg-note{margin-bottom:14px;font-weight:520}
