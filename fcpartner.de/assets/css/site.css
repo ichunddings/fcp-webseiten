@@ -45,7 +45,7 @@ html.menu-open body{overflow:hidden}
 /* Typografie */
 .display{font-family:var(--serif);font-weight:370;font-size:clamp(3.4rem,1.1rem + 10.6vw,11.25rem);line-height:.92;letter-spacing:-.042em;width:fit-content;text-wrap:nowrap}
 .display .ln{display:block}
-@media (max-width:759px){.display{font-size:min(calc(1.6rem + 14.6vw),calc((100vw - 36px)/4.35))}}
+@media (max-width:759px){.display{font-size:min(calc(1.6rem + 14.6vw),calc((100vw - 36px)/5.9))}}
 .h1{font-family:var(--serif);font-weight:370;font-size:clamp(2.5rem,.9rem + 8vw,7rem);line-height:.98;letter-spacing:-.038em;text-wrap:balance;max-width:13ch}
 .h2{font-family:var(--serif);font-weight:380;font-size:clamp(2.1rem,1rem + 3.4vw,4.2rem);line-height:1.03;letter-spacing:-.032em;text-wrap:balance}
 .lead{font-size:clamp(1.12rem,1rem + .5vw,1.4rem);line-height:1.42;letter-spacing:-.012em;max-width:36ch;font-weight:440;text-wrap:pretty}
@@ -338,7 +338,10 @@ dialog{border:0;border-radius:28px;padding:30px;max-width:min(560px,calc(100vw -
 dialog::backdrop{background:rgba(5,6,10,.5);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
 dialog h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.5rem,6.2vw,1.9rem);letter-spacing:-.02em;margin-bottom:14px;overflow-wrap:anywhere}
 dialog p{margin-bottom:22px}
-dialog{max-height:min(86svh,820px);overflow:auto}
+dialog{max-height:min(86svh,820px);overflow:hidden}
+dialog[open]{display:flex;flex-direction:column}
+dialog h2,dialog .dlg-note,dialog form{flex:none}
+#dlgBody{flex:1 1 auto;min-height:0;overflow-y:auto;margin-right:-14px;padding-right:14px;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:rgba(0,0,0,.3) transparent}
 .legal{position:relative;padding-block:0 clamp(72px,10vw,140px)}
 .legal-body{max-width:68ch;display:grid;gap:18px;color:var(--ink-2)}
 .legal-body h2,#dlgBody h2{font-family:var(--serif);font-weight:400;font-size:1.45rem;line-height:1.2;letter-spacing:-.02em;color:var(--ink);margin:14px 0 0}
