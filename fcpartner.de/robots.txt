@@ -1,2 +1,6 @@
 User-agent: *
-Disallow: /
+Allow: /
+Disallow: /kontakt/senden.php
+Disallow: /_deploy/
+
+Sitemap: https://fcpartner.de/sitemap.xml

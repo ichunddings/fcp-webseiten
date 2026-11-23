@@ -1,0 +1,39 @@
+# Fischer Consulting Partner
+
+> Marketingberatung, IT-Beratung und Software nach Maß aus Berlin. Für Selbstständige, Mittelstand und große Unternehmen.
+
+Anschrift: Fischer Consulting Partner, Dain Fischer, Reichenberger Straße 103, 10999 Berlin. E-Mail: kontakt@fcpartner.de
+
+## Seiten
+
+- [Start](https://fcpartner.de/): Marketingberatung, IT-Beratung und Software nach Maß aus Berlin. Für Selbstständige, Mittelstand und große Unternehmen.
+- [Leistungen](https://fcpartner.de/leistungen/): Was Fischer Consulting Partner macht: Marketingberatung, Strategie, Kampagnen, IT-Beratung sowie Apps, Tools und Webseiten nach Maß.
+- [Für wen](https://fcpartner.de/fuer-wen/): Für Einzelne, Selbstständige, Mittelstand und große Unternehmen: Fischer Consulting Partner richtet sich nach Ihrer Größe.
+- [Über uns](https://fcpartner.de/ueber-uns/): Fischer Consulting Partner aus Berlin: über zehn Jahre Marketing, dazu IT-Lösungen und eigene Programmierung. So läuft ein Projekt.
+- [Kontakt](https://fcpartner.de/kontakt/): Schreiben Sie uns, worum es geht. Fischer Consulting Partner meldet sich bei Ihnen.
+
+## Leistungen
+
+- Marketingberatung: Wofür stehen Sie, wen wollen Sie erreichen und über welche Kanäle? Wir bringen das in eine Reihenfolge und entwickeln es mit Ihnen weiter.
+- IT-Beratung: Wir schauen auf Prozesse, Systeme, Daten und Tools und darauf, was davon Ihr Unternehmen wirklich braucht.
+- Strategieentwicklung: Ein Plan, der sagt, was zuerst passiert, was warten kann und was Sie lassen sollten.
+- Zielgruppenanalyse: Wer kauft bei Ihnen, warum, und wo findet man diese Leute? Das klären wir, bevor Geld ausgegeben wird.
+- Leadgenerierung: Ein Weg, auf dem Interessenten bei Ihnen anfragen, und den Sie nachvollziehen können: woher sie kamen und was daraus wurde.
+- Kampagnenmanagement: Wir planen Ihre digitalen Kampagnen, steuern sie, prüfen die Zahlen und ändern, was nicht funktioniert.
+- Influencer Marketing: Wir suchen passende Creator aus, sprechen sie an und koordinieren die Zusammenarbeit.
+- Digitalberatung: Wir suchen die Abläufe, die Zeit kosten, und führen Tools oder Automatisierungen ein, die sie vereinfachen.
+- Apps und Tools nach Maß: Statt Ihren Ablauf an Standardsoftware anzupassen, programmieren wir ein Tool, das zu Ihrem Ablauf passt.
+- Webseiten nach Maß: Wir entwerfen und programmieren Ihre Webseite selbst, passend zu Ihrer Zielgruppe.
+
+## English
+
+- [Home](https://fcpartner.de/en/): Marketing consulting, IT consulting and custom software from Berlin. For the self-employed, mid-sized businesses and large companies.
+- [Services](https://fcpartner.de/en/services/): What Fischer Consulting Partner does: marketing consulting, strategy, campaigns, IT consulting, and custom apps, tools and websites.
+- [Who we serve](https://fcpartner.de/en/who-we-serve/): For individuals, the self-employed, mid-sized businesses and large companies: Fischer Consulting Partner adapts to your size.
+- [About us](https://fcpartner.de/en/about/): Fischer Consulting Partner from Berlin: over ten years in marketing, plus IT solutions and in-house programming. How a project works.
+- [Contact](https://fcpartner.de/en/contact/): Tell us what it is about. Fischer Consulting Partner will get back to you.
+
+## Optional
+
+- [Impressum](https://fcpartner.de/impressum/): Impressum von Fischer Consulting Partner.
+- [Datenschutzerklärung](https://fcpartner.de/datenschutz/): Datenschutzerklärung von Fischer Consulting Partner.
