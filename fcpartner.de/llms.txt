@@ -8,29 +8,54 @@ Anschrift: Fischer Consulting Partner, Dain Fischer, Reichenberger Straße 103, 
 
 - [Start](https://fcpartner.de/): Marketingberatung, IT-Beratung und Software nach Maß aus Berlin. Für Selbstständige, Mittelstand und große Unternehmen.
 - [Leistungen](https://fcpartner.de/leistungen/): Was Fischer Consulting Partner macht: Marketingberatung, Strategie, Kampagnen, IT-Beratung sowie Apps, Tools und Webseiten nach Maß.
+- [Marketingberatung](https://fcpartner.de/leistungen/marketingberatung/): Marketingberatung aus Berlin: Strategie, Marke und Design, SEO, Social Media, Werbekampagnen und E-Mail-Marketing. Auf Wunsch mit Umsetzung.
+- [IT-Beratung](https://fcpartner.de/leistungen/it-beratung/): IT-Beratung aus Berlin: IT-Strategie, Softwareauswahl, Prozessautomatisierung, Cloud, IT-Sicherheit und Schulung. Auf Wunsch mit Umsetzung.
+- [Software nach Maß](https://fcpartner.de/leistungen/software-nach-mass/): Software nach Maß aus Berlin: Anwendungen, Apps für iOS und Android, Webseiten und Onlineshops, von der Konzeption bis zur Wartung.
 - [Für wen](https://fcpartner.de/fuer-wen/): Für Einzelne, Selbstständige, Mittelstand und große Unternehmen: Fischer Consulting Partner richtet sich nach Ihrer Größe.
 - [Über uns](https://fcpartner.de/ueber-uns/): Fischer Consulting Partner aus Berlin: über zehn Jahre Marketing, dazu IT-Lösungen und eigene Programmierung. So läuft ein Projekt.
+- [Häufige Fragen](https://fcpartner.de/haeufige-fragen/): Antworten auf häufige Fragen: für wen wir arbeiten, ob wir beraten und umsetzen, was nach Ihrer Anfrage passiert und was mit Ihren Daten geschieht.
 - [Kontakt](https://fcpartner.de/kontakt/): Schreiben Sie uns, worum es geht. Fischer Consulting Partner meldet sich bei Ihnen.
 
 ## Leistungen
 
-- Marketingberatung: Wofür stehen Sie, wen wollen Sie erreichen und über welche Kanäle? Wir bringen das in eine Reihenfolge und entwickeln es mit Ihnen weiter.
-- IT-Beratung: Wir schauen auf Prozesse, Systeme, Daten und Tools und darauf, was davon Ihr Unternehmen wirklich braucht.
-- Strategieentwicklung: Ein Plan, der sagt, was zuerst passiert, was warten kann und was Sie lassen sollten.
-- Zielgruppenanalyse: Wer kauft bei Ihnen, warum, und wo findet man diese Leute? Das klären wir, bevor Geld ausgegeben wird.
-- Leadgenerierung: Ein Weg, auf dem Interessenten bei Ihnen anfragen, und den Sie nachvollziehen können: woher sie kamen und was daraus wurde.
-- Kampagnenmanagement: Wir planen Ihre digitalen Kampagnen, steuern sie, prüfen die Zahlen und ändern, was nicht funktioniert.
+### Marketingberatung
+- Beratung und Strategie: Wir analysieren Ihre Zielgruppe und den Wettbewerb: Wer kauft bei Ihnen, warum, und wo findet man diese Leute? Wir legen Ziele fest, schlagen passende Kanäle und ein Budget vor und machen daraus einen Plan, der sagt, was zuerst passiert, was warten kann und was Sie lassen sollten.
+- Marke und Design: Wir positionieren Ihre Marke, gestalten Logos und Werbemittel und entwickeln eine einheitliche Bildsprache und Tonalität.
+- Websites und Suchmaschinenoptimierung (SEO): Wir erstellen Websites und Landingpages und bereiten Inhalte so auf, dass sie über Suchmaschinen leichter gefunden werden.
+- Inhalte und Social Media: Wir erstellen Texte, Fotos und Videos, veröffentlichen Beiträge und reagieren auf Fragen und Kommentare.
 - Influencer Marketing: Wir suchen passende Creator aus, sprechen sie an und koordinieren die Zusammenarbeit.
-- Digitalberatung: Wir suchen die Abläufe, die Zeit kosten, und führen Tools oder Automatisierungen ein, die sie vereinfachen.
-- Apps und Tools nach Maß: Statt Ihren Ablauf an Standardsoftware anzupassen, programmieren wir ein Tool, das zu Ihrem Ablauf passt.
-- Webseiten nach Maß: Wir entwerfen und programmieren Ihre Webseite selbst, passend zu Ihrer Zielgruppe.
+- Werbekampagnen: Wir gestalten und schalten Anzeigen, etwa bei Google, auf Instagram, in Printmedien oder auf Plakaten. Wir planen Ihre Kampagnen, steuern sie, prüfen die Zahlen und ändern, was nicht funktioniert.
+- E-Mail-Marketing: Wir erstellen Newsletter und automatisierte E-Mail-Serien, etwa zur Begrüßung neuer Kunden.
+- Leadgenerierung: Ein Weg, auf dem Interessenten bei Ihnen anfragen, und den Sie nachvollziehen können: woher sie kamen und was daraus wurde.
+- Erfolgsmessung und Optimierung: Wir werten aus, welche Maßnahmen Anfragen oder Verkäufe bringen, und passen Kampagnen entsprechend an.
+
+### IT-Beratung
+- IT-Strategie: Wir bewerten Ihre bestehenden Systeme und entwickeln einen Plan, welche Investitionen sinnvoll sind und was zuerst umgesetzt werden sollte.
+- Softwareauswahl und Einführung: Wir klären die Anforderungen mit Ihren Fachabteilungen, vergleichen passende Lösungen und begleiten die Einführung.
+- Prozessautomatisierung: Wir erkennen wiederkehrende Handarbeit und vereinfachen Abläufe, etwa indem Bestellungen automatisch in die Buchhaltung übernommen werden. Meist beginnt das mit einer einfachen Frage: Was machen Sie jede Woche von Hand, obwohl es nicht sein müsste?
+- Cloud und Infrastruktur: Wir planen Server, Netzwerke und Arbeitsplätze und unterstützen Ihr Unternehmen beim Umzug in die Cloud.
+- IT-Sicherheit: Wir schätzen Risiken ein und entwickeln Konzepte für Zugriffsrechte, Datensicherung und die Wiederherstellung nach Ausfällen.
+- Projektleitung und Schulung: Wir koordinieren interne Teams und externe Anbieter und schulen Ihre Mitarbeitenden im Umgang mit neuen Systemen.
+
+### Software nach Maß
+- Beratung und Konzeption: Gemeinsam mit Ihnen klären wir, wer die Anwendung nutzt, welche Aufgaben sie erleichtern soll und welche Funktionen dafür nötig sind.
+- Design und Prototypen: Wir gestalten Benutzeroberflächen und testen mit einem klickbaren Entwurf, ob die Bedienung verständlich ist.
+- Individuelle Softwareentwicklung: Wir entwickeln Anwendungen für konkrete Geschäftsabläufe, etwa zur Einsatzplanung, Auftragsverwaltung oder Angebotserstellung.
+- App-Entwicklung: Wir entwickeln mobile Apps für iOS und Android, etwa für Terminbuchungen oder die Dokumentation von Arbeiten vor Ort.
+- Webentwicklung: Wir erstellen Unternehmenswebsites, Onlineshops und Webanwendungen wie Kundenportale oder Buchungssysteme.
+- Integration und Datenübernahme: Wir verbinden die neue Lösung mit bestehenden Systemen und übernehmen vorhandene Daten.
+- Tests, Einführung und Wartung: Wir prüfen die Funktionen, veröffentlichen die Lösung und beheben nach dem Start Fehler, spielen Updates ein und ergänzen Funktionen.
 
 ## English
 
 - [Home](https://fcpartner.de/en/): Marketing consulting, IT consulting and custom software from Berlin. For the self-employed, mid-sized businesses and large companies.
 - [Services](https://fcpartner.de/en/services/): What Fischer Consulting Partner does: marketing consulting, strategy, campaigns, IT consulting, and custom apps, tools and websites.
+- [Marketing consulting](https://fcpartner.de/en/services/marketing-consulting/): Marketing consulting from Berlin: strategy, brand and design, SEO, social media, advertising campaigns and email marketing. Implementation on request.
+- [IT consulting](https://fcpartner.de/en/services/it-consulting/): IT consulting from Berlin: IT strategy, software selection, process automation, cloud, IT security and training. Implementation on request.
+- [Custom software](https://fcpartner.de/en/services/custom-software/): Custom software from Berlin: applications, apps for iOS and Android, websites and online shops, from concept to maintenance.
 - [Who we serve](https://fcpartner.de/en/who-we-serve/): For individuals, the self-employed, mid-sized businesses and large companies: Fischer Consulting Partner adapts to your size.
 - [About us](https://fcpartner.de/en/about/): Fischer Consulting Partner from Berlin: over ten years in marketing, plus IT solutions and in-house programming. How a project works.
+- [FAQ](https://fcpartner.de/en/faq/): Answers to common questions: who we work for, whether we advise and carry out, what happens after your inquiry and what happens to your data.
 - [Contact](https://fcpartner.de/en/contact/): Tell us what it is about. Fischer Consulting Partner will get back to you.
 
 ## Optional
