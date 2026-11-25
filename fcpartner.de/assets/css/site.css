@@ -39,7 +39,6 @@ h1,h2,h3,p,ul,ol{margin:0}
 h1:focus{outline:none}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .wrap{width:100%;max-width:1360px;margin-inline:auto;padding-left:max(var(--gut),env(safe-area-inset-left,0px));padding-right:max(var(--gut),env(safe-area-inset-right,0px))}
-.ph{background:#FFF3A8;color:#000;padding:.1em .45em;border-radius:6px;font-weight:600}
 html.menu-open body{overflow:hidden}
 
 /* Typografie */
