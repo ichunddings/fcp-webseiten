@@ -1,7 +1,7 @@
 (function () {
   'use strict';
   try {
-    var M = {"/":"/en/","/leistungen/":"/en/services/","/fuer-wen/":"/en/who-we-serve/","/ueber-uns/":"/en/about/","/kontakt/":"/en/contact/","/impressum/":"/en/legal-notice/","/datenschutz/":"/en/privacy/"}, en = M[location.pathname];
+    var M = {"/":"/en/","/leistungen/":"/en/services/","/leistungen/marketingberatung/":"/en/services/marketing-consulting/","/leistungen/it-beratung/":"/en/services/it-consulting/","/leistungen/software-nach-mass/":"/en/services/custom-software/","/fuer-wen/":"/en/who-we-serve/","/ueber-uns/":"/en/about/","/haeufige-fragen/":"/en/faq/","/kontakt/":"/en/contact/","/impressum/":"/en/legal-notice/","/datenschutz/":"/en/privacy/"}, en = M[location.pathname];
     if (!en) return;
     /* ausdrückliche Wahl über den Umschalter (?sprache=de): bleiben, Adresse säubern */
     var qs = new URLSearchParams(location.search);
