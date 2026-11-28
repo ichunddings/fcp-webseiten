@@ -180,9 +180,16 @@ function updateNav(){
 
 /* ---------- Menü (Handy) ---------- */
 const menuBtn=$('#menuBtn'), menu=$('#menu');
+let menuTimer=0;
 function setMenu(o){
   menuOpen=o;
-  menu.hidden=!o;
+  clearTimeout(menuTimer);
+  if(o){ menu.hidden=false; void menu.offsetWidth; menu.classList.add('on'); }
+  else{
+    menu.classList.remove('on');
+    if(reduce||menu.hidden) menu.hidden=true;
+    else menuTimer=setTimeout(()=>{ if(!menuOpen) menu.hidden=true; },560);
+  }
   menuBtn.setAttribute('aria-expanded',o?'true':'false');
   menuBtn.textContent=o?T.close:T.menu;
   root.classList.toggle('menu-open',o);
@@ -231,6 +238,36 @@ document.addEventListener('click',e=>{
   const same=MULTI?(href===location.pathname||href==='.'):(href.slice(1)===cur);
   if(same){e.preventDefault();if(menuOpen)setMenu(false);scrollTo({top:0,behavior:reduce?'auto':'smooth'});}
 });
+
+/* ---------- Seitenwechsel ohne Browser-Übergang (zum Beispiel Firefox): Seite blendet aus, dann Wechsel ---------- */
+if(MULTI && !('PageSwapEvent' in window)){
+  document.addEventListener('click',e=>{
+    if(e.defaultPrevented||e.button||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||reduce) return;
+    const a=e.target.closest&&e.target.closest('a[href]');
+    if(!a||(a.target&&a.target!=='_self')||a.hasAttribute('download')) return;
+    let u; try{u=new URL(a.href,location.href);}catch(_){return;}
+    if(u.origin!==location.origin||(u.pathname===location.pathname&&u.search===location.search)) return;
+    e.preventDefault();
+    root.classList.add('leaving');
+    setTimeout(()=>{location.href=u.href;},230);
+  });
+  /* Zurück-Taste (Seite kommt aus dem Zwischenspeicher): wieder einblenden */
+  addEventListener('pageshow',e=>{if(e.persisted)root.classList.remove('leaving');});
+}
+/* Seiten vorladen, sobald Maus, Finger oder Tastatur einen Link berühren: der Wechsel wartet dann kaum noch */
+if(MULTI){
+  const loaded=new Set(), sd=navigator.connection&&navigator.connection.saveData;
+  const warm=e=>{
+    const a=!sd&&e.target.closest&&e.target.closest('a[href]');
+    if(!a) return;
+    let u; try{u=new URL(a.href,location.href);}catch(_){return;}
+    if(u.origin!==location.origin||u.pathname===location.pathname||loaded.has(u.pathname)||!/(\/|\.html)$/.test(u.pathname)) return;
+    loaded.add(u.pathname);
+    const l=document.createElement('link'); l.rel='prefetch'; l.href=u.pathname; l.as='document';
+    document.head.appendChild(l);
+  };
+  ['pointerover','touchstart','focusin'].forEach(t=>document.addEventListener(t,warm,{passive:true}));
+}
 
 /* ---------- Takt ---------- */
 let tick=false;
